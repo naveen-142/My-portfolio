@@ -58,7 +58,18 @@ html{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     transition: .4s;
+
+}
+.btn a{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-decoration-style: bold;
+    color: black;
 }
 .btn>i{
     margin-left: 10px;
@@ -418,8 +429,8 @@ h3{
 .projects-container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 60px;
     flex-wrap: wrap;
 }
 

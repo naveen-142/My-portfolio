@@ -140,38 +140,38 @@ form.addEventListener('submit', e => {
 })
  
 
-/* ----- PROJECT DEPLOYMENT MESSAGE ----- */
-const projectLinks = document.querySelectorAll('.project-link');
-
 // Function to create and show deployment message
 function showDeploymentMessage() {
-    // Create a new div for the deployment message
-    const deploymentMessage = document.createElement('div');
-    deploymentMessage.className = 'deployment-message';
-    deploymentMessage.innerHTML = '<p>This project is under deployment. Please check back later for updates!</p>';
-    document.body.appendChild(deploymentMessage);
+  // Create a new div for the deployment message
+  const deploymentMessage = document.createElement('div');
+  deploymentMessage.className = 'deployment-message';
+  deploymentMessage.innerHTML = '<p>This project is under deployment. Please check back later for updates!</p>';
+  document.body.appendChild(deploymentMessage);
 
-    // Style the message
-    deploymentMessage.style.position = 'fixed';
-    deploymentMessage.style.top = '50%';
-    deploymentMessage.style.left = '50%';
-    deploymentMessage.style.transform = 'translate(-50%, -50%)';
-    deploymentMessage.style.padding = '20px';
-    deploymentMessage.style.background = '#fff';
-    deploymentMessage.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-    deploymentMessage.style.zIndex = '1000';
-    deploymentMessage.style.borderRadius = '10px';
+  // Style the message
+  deploymentMessage.style.position = 'fixed';
+  deploymentMessage.style.top = '50%';
+  deploymentMessage.style.left = '50%';
+  deploymentMessage.style.transform = 'translate(-50%, -50%)';
+  deploymentMessage.style.padding = '20px';
+  deploymentMessage.style.background = '#fff';
+  deploymentMessage.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+  deploymentMessage.style.zIndex = '1000';
+  deploymentMessage.style.borderRadius = '10px';
 
-    // Show the message for 3 seconds and then remove it
-    setTimeout(() => {
-        deploymentMessage.remove();
-    }, 3000);
+  // Show the message for 3 seconds and then remove it
+  setTimeout(() => {
+      deploymentMessage.remove();
+  }, 3000);
 }
 
-// Add click event listener to each project link
-projectLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent default link behavior
-        showDeploymentMessage(); // Show the deployment message
-    });
-});
+// Target the specific project link for the e-commerce website by ID or class
+const eCommerceProjectLink = document.querySelector('#ecommerce-project-link');
+
+// Add click event listener only to the e-commerce project link
+if (eCommerceProjectLink) {
+  eCommerceProjectLink.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default link behavior
+      showDeploymentMessage(); // Show the deployment message
+  });
+}
