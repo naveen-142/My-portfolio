@@ -730,6 +730,7 @@ footer{
     }
     .social_icons{
         margin-top: 2em;
+        margin-bottom: 2em;
     }
     .featured-image{
         order: 1;
@@ -777,6 +778,9 @@ footer{
     .featured-name{
         font-size: 40px;
     }
+    .featured-image{
+    margin-bottom: 40px;    
+    }
     .experience-box{
         width: 100%;
     }
@@ -787,6 +791,21 @@ footer{
         flex-direction: column;
     }
     .input-field{
+        width: 100%;
+    }
+    .social_icons{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .footer_menu_list{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 300;
+    }
+    .projects-container{
+        justify-content: center;
+    }
+    .projects-box{
         width: 100%;
     }
 }
