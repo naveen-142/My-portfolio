@@ -139,7 +139,6 @@ form.addEventListener('submit', e => {
   )
 })
  
-
 // Function to create and show deployment message
 function showDeploymentMessage() {
   // Create a new div for the deployment message
@@ -161,17 +160,17 @@ function showDeploymentMessage() {
 
   // Show the message for 3 seconds and then remove it
   setTimeout(() => {
-      deploymentMessage.remove();
+    deploymentMessage.remove();
   }, 3000);
 }
 
-// Target the specific project link for the e-commerce website by ID or class
+// Target only the e-commerce project link by its unique ID
 const eCommerceProjectLink = document.querySelector('#ecommerce-project-link');
 
 // Add click event listener only to the e-commerce project link
 if (eCommerceProjectLink) {
   eCommerceProjectLink.addEventListener('click', (event) => {
-      event.preventDefault(); // Prevent default link behavior
-      showDeploymentMessage(); // Show the deployment message
+    event.preventDefault(); // Prevent default link behavior
+    showDeploymentMessage(); // Show the deployment message
   });
 }
