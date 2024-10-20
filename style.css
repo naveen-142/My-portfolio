@@ -719,7 +719,7 @@ footer{
 
    
     .experience-box h3 {
-        font-size: 22px; 
+        font-size: 20px; 
     }
     .experience-box p {
         font-size: 16px; 
@@ -793,7 +793,7 @@ footer{
     }
     .image, .image img {
         width: 100%;
-        max-width: 300px; 
+        max-width: 400px; 
         height: auto;
     }
 
@@ -809,6 +809,10 @@ footer{
         width: 48%; 
         padding: 15px;
         box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .experience-box h3{
+        font-size: 16px;
     }
 
     .nav_menu_list li:hover {
@@ -893,6 +897,10 @@ footer{
     }
     .experience-box{
         width: 80%;
+    }
+    .experience-box h3{
+        font-size: 15px;
+       
     }
     .projects-container{
         justify-content: center;
